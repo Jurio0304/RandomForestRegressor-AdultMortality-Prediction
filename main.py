@@ -68,20 +68,20 @@ def preprocess_data(data, imputer=None, scaler=None):
     return data_norm, imputer, scaler
 
 
-def gridsearch():
-    # 需要网格搜索的参数
-    n_estimators = [i for i in range(450, 551, 20)]
-    max_depth = [i for i in range(5, 9)]
-    min_samples_split = [i for i in range(2, 4)]
-    min_samples_leaf = [i for i in range(1, 4)]
-    max_features = [i for i in range(15, 20)]
-    max_samples = [i / 100 for i in range(95, 100)]
-    parameters = {'n_estimators': n_estimators,
-                  'max_depth': max_depth,
-                  'min_samples_split': min_samples_split,
-                  'min_samples_leaf': min_samples_leaf,
-                  'max_features': max_features,
-                  'max_samples': max_samples}
+# def gridsearch():
+#     # 需要网格搜索的参数
+#     n_estimators = [i for i in range(450, 551, 20)]
+#     max_depth = [i for i in range(5, 9)]
+#     min_samples_split = [i for i in range(2, 4)]
+#     min_samples_leaf = [i for i in range(1, 4)]
+#     max_features = [i for i in range(15, 20)]
+#     max_samples = [i / 100 for i in range(95, 100)]
+#     parameters = {'n_estimators': n_estimators,
+#                   'max_depth': max_depth,
+#                   'min_samples_split': min_samples_split,
+#                   'min_samples_leaf': min_samples_leaf,
+#                   'max_features': max_features,
+#                   'max_samples': max_samples}
     # # 随机森林回归
     # regressor = RandomForestRegressor(bootstrap=True, oob_score=True, random_state=1)
     #
