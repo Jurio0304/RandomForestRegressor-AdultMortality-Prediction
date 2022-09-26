@@ -1,0 +1,2 @@
+# RandomForestRegressor-AdultMortality-Prediction
+使用sklearn.ensemble.RandomForestRegressor和GridSearchCV进行成人死亡率预测
